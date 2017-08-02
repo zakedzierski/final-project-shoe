@@ -1,17 +1,30 @@
+<!doctype html>
+<html>
 
-{% extends 'base.html' %}
+  <head>
+    <meta charset="utf-8">
+    <title>HappyFeet</title>
+    <meta name="HappyFeet" content="HappyFeet">
+    <!-- http://meyerweb.com/eric/tools/css/reset/ -->
+    {% load staticfiles %}
+    <link rel="stylesheet" href="/static/styles.css">
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+  </head>
 
-{% block title %}Login{% endblock %}
+  <body>
 
-{% block content %}
-<!-- <div id="logindiv1">  <img src="http://i.imgur.com/J7Dcwku.png" height=400></img>
+<div id="logindiv1">  <img src="http://i.imgur.com/J7Dcwku.png" height=400></img>
 </br>
-<img src="http://i.imgur.com/7hhTQbz.png" width=500></img></div> -->
-
-  <h2>Login</h2>
+<img src="http://i.imgur.com/7hhTQbz.png" width=500></img></div>
+<div id="login">  <h2>Login</h2>
   <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Login</button>
   </form>
-{% endblock %}
+</div>
+
+</body>
+</html>

@@ -8,6 +8,31 @@
 #taskbar {
   position: relative;
   height:120px;
-  width:100px;
+  width:1000px;
   background:#002699;
+}
+
+body {
+  background-color:  #cce6ff;
+}
+
+h2 {
+  position: relative;
+  left: 50%;
+  top:10px;
+}
+
+#login
+{
+  position: relative;
+  left: 50%;
+  height: 200px;
+  width: 500px;
+  background-color: #FFFFFF;
+}
+
+#logindiv1
+{
+position:relative;
+left:50%;
 }
