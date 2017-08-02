@@ -1,0 +1,13 @@
+.icon {
+  height:100px;
+  width:100px;
+  position: fixed;
+  top:20px;
+}
+
+#taskbar {
+  position: relative;
+  height:120px;
+  width:100px;
+  background:#002699;
+}

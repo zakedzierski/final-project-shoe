@@ -1,0 +1,17 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<!-- <div id="logindiv1">  <img src="http://i.imgur.com/J7Dcwku.png" height=400></img>
+</br>
+<img src="http://i.imgur.com/7hhTQbz.png" width=500></img></div> -->
+
+  <h2>Login</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+  </form>
+{% endblock %}

@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'happyfeet',
 ]
 
 MIDDLEWARE = [
@@ -50,8 +51,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'mysite.urls'
-
-TEMPLATE_DIRS = ('C:/Users/GWC-CHC-15/happyfeet.github.io/mysite/templates/',)
+# STATICFILES_DIRS = [    os.path.join(BASE_DIR, 'static'),]
 
 TEMPLATES = [
     {
