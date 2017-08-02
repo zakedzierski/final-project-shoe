@@ -1,14 +1,18 @@
 .icon {
   height:100px;
   width:100px;
-  position: fixed;
+  position: relative;
   top:20px;
 }
 
 #taskbar {
-  position: relative;
+  position: static;
+  width:3000px;
   height:120px;
+<<<<<<< HEAD
   width:1000px;
+=======
+>>>>>>> 34550325ed6384f6ed10bfae228f083d7fd7a95a
   background:#002699;
 }
 
