@@ -3,13 +3,19 @@
   width:50px;
   position: relative;
   float:left;
+  padding-left: 11%;
   display:block;
-  margin-right: 22%;
+  margin-right: 16%;
 
 }
 
+#contentlogin {
+  position:relative;
+  top:50px;
+}
+
 #houseicon {
-  margin-top:1%;
+  margin-top:0.7%;
 }
 
 #manicon {
@@ -29,7 +35,7 @@ position: relative;
   height:50px;
   width:90%;
     z-index: -1;
-  left:5%;
+  left:2%;
   background:#002699;
   border-radius: 25px;
     padding: 20px;
@@ -37,28 +43,38 @@ position: relative;
     height: 150px;
 }
 
+.center{
+  position: relative;
+  left: 35%;
+}
+
+.rlcenter{
+  position: relative;
+padding-left: 25%;
+}
+
+#pls {
+  position: relative;
+left:26%;
+}
 
 body {
-  background-color:  #b9e9ee;
+    overflow-x: hidden !important;
+    background-color:  #b9e9ee;
 }
 
 h2 {
   position: relative;
-  left: 50%;
-  top:10px;
+  left: 45%;
+  top:20px;
+  color: black;
 }
 
 #login
 {
   position: relative;
-  left: 50%;
+  left: 32%;
   height: 200px;
   width: 500px;
   background-color: #FFFFFF;
-}
-
-#logindiv1
-{
-position:relative;
-left:50%;
 }
