@@ -1,18 +1,22 @@
 .icon {
-  height:100px;
-  width:100px;
+  height: 10%;
   position: relative;
   top:20px;
+  display: block;
+  float: left;
+  margin-right: 5%;
+  margin-left: 8%;
+
+
 }
 
 #taskbar {
   position: static;
-  width:3000px;
-  height:120px;
-<<<<<<< HEAD
-  width:1000px;
-=======
->>>>>>> 34550325ed6384f6ed10bfae228f083d7fd7a95a
+  width:80%;
+  height:80px;
+
+
+
   background:#002699;
 }
 
