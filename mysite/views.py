@@ -1,17 +1,19 @@
-from django.contrib.auth import login, authenticate
-from django.contrib.auth.forms import UserCreationForm
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 
 def signup(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
-        if form.is_valid():
-            form.save()
-            username = form.cleaned_data.get('username')
-            raw_password = form.cleaned_data.get('password1')
-            user = authenticate(username=username, password=raw_password)
-            login(request, user)
-            return redirect('home')
+        uf = UserForm(request.POST, prefix='user')
+        upf = UserProfileForm(request.POST, prefix='userprofile')
+        if uf.is_valid() * upf.is_valid():
+            user = uf.save()
+            userprofile = upf.save(commit=False)
+            userprofile.user = user
+            userprofile.save()
+            return django.http.HttpResponseRedirect('/')
     else:
-        form = UserCreationForm()
-    return render(request, 'signup.html', {'form': form})
+        uf = UserForm(prefix='user')
+        upf = UserProfileForm(prefix='userprofile')
+    return django.shortcuts.render_to_response('login/signup.html',
+                                               dict(userform=uf,
+                                                    userprofileform=upf),
+                                               context_instance=django.template.RequestContext(request))
