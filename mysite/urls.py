@@ -8,12 +8,22 @@ from django.views.generic.edit import CreateView
 from django.contrib.auth.forms import UserCreationForm
 
 urlpatterns = [
+
+
+     url(r'^admin/', admin.site.urls),
     url(r'^login/$', auth_views.login, name='login'),
+
+
     url(r'^logout/$', auth_views.logout, name='logout'),
     url('^register/', CreateView.as_view(
             template_name='register.html',
             form_class=UserCreationForm,
-            success_url='/'
+            success_url='/profile'
     )),
-    
+
+            url('^profile/', CreateView.as_view(
+                    template_name='profile.html',
+                    form_class=UserCreationForm,
+            )),
+
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

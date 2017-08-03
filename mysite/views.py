@@ -9,7 +9,7 @@ def signup(request):
             userprofile = upf.save(commit=False)
             userprofile.user = user
             userprofile.save()
-            return django.http.HttpResponseRedirect('/')
+            return django.http.HttpResponseRedirect('/profile.html')
     else:
         uf = UserForm(prefix='user')
         upf = UserProfileForm(prefix='userprofile')
