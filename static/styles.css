@@ -64,12 +64,11 @@ position:relative;
 left:50%;
 }
 
-#welcome {
-  margin-left: 50%;
-  padding-left: 100px;
-}
 
 #button1 {
   display: block;
   float: right;
+  position: relative;
+
+
 }

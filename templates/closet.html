@@ -3,5 +3,33 @@
 {% block title %}Profile{% endblock %}
 
 {% block content %}
-CLOSET
+<img src="http://i.imgur.com/IjaSJAG.png" id="myclosettitle" width=300></img>
+{% for shoe in shoes %}
+</br></br>
+
+<div id="shoe_boxes"><table id="table">
+
+{% if shoe.icon == "Running Shoe" %}
+  <img class="shoeicons" src="http://i.imgur.com/x8h7jE1.png" height=80px></img>
+  {% elif shoe.icon == "Running Spike" %}
+  <img class="shoeicons" src="http://i.imgur.com/6WwX0YA.png" height=50px></img>
+  {% else %}
+  <img class="shoeicons" src="http://i.imgur.com/SXQwH4D.png" height=70px></img>
+  {% endif %}
+  <tr>  <td>Name: {{shoe.name}}</td></tr>
+
+  <tr><td>Brand: {{shoe.brand}}</td></tr>
+  <tr><td>Miles Run: {{shoe.miles_run}}
+</br></br>
+  <a href="/addshoe"><img id="addbutton" src="http://i.imgur.com/h6X6NTf.png" height=20px></img>  <div id="addmiles">add miles</div></a>
+<a href="/home"><img id="selectbutton" src="http://i.imgur.com/qwH7fma.png" height=20px></img>  <div id="select">select</div></a>
+
+</td></tr>
+
+
+</table></div>
+{% endfor %}
+
+
+
 {% endblock %}
