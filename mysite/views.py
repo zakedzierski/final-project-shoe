@@ -19,23 +19,3 @@ def signup(request):
     return django.shortcuts.render_to_response('login/signup.html',
                                                dict(userform=uf,
                                                     userprofileform=upf),
-                                               context_instance=django.template.RequestContext(request))
-
-def suggestion(request):
-    if request.method == "POST":
-
-        form = SuggestionForm(request.POST)
-
-        if(form.is_valid()):
-            print(request.POST['title'])
-            message = 'success'
-        else:
-            message = 'fail'
-
-        return render_to_response('contact/suggestion.html',
-              {'message': message},
-              context_instance=RequestContext(request))
-    else:
-        return render_to_response('contact/suggestion.html',
-                {'form': SuggestionForm()},
-                context_instance=RequestContext(request))

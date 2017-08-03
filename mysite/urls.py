@@ -1,6 +1,7 @@
 from django.conf.urls import url
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
+from happyfeet import views
 from django.conf.urls.static import static
 from django.conf import settings
 from django.views.generic.edit import CreateView
@@ -10,6 +11,7 @@ urlpatterns = [
 url(r'^admin/', admin.site.urls),
 url(r'^login/$', auth_views.login, name='login'),
 url(r'^logout/$', auth_views.logout, name='logout'),
+
 
 url('^register/', CreateView.as_view(
             template_name='register.html',
@@ -21,9 +23,7 @@ url('^profile/', CreateView.as_view(
 url('^home/', CreateView.as_view(
                         template_name='home.html',
                         form_class=UserCreationForm,)),
-url('^closet/', CreateView.as_view(
-            template_name='closet.html',
-            form_class=UserCreationForm,)),
+url('^closet/', views.get_closet, name='closet'),
 url('^addshoe/', CreateView.as_view(
             template_name='addshoe.html',
             form_class=UserCreationForm,)),
