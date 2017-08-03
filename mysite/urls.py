@@ -24,5 +24,7 @@ url('^home/', CreateView.as_view(
 url('^closet/', CreateView.as_view(
             template_name='closet.html',
             form_class=UserCreationForm,)),
-
+url('^addshoe/', CreateView.as_view(
+            template_name='addshoe.html',
+            form_class=UserCreationForm,)),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
