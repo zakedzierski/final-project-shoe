@@ -3,10 +3,21 @@
 {% block title %}Login{% endblock %}
 
 {% block content %}
+
+<div id="contentlogin">
+
+<div class="center" ><img src="http://i.imgur.com/Whgyc38.png" height=200px></img></br>
+<img src="http://i.imgur.com/WzDFEYK.png" width=400px><img></div>
+
+<div id="login">
   <h2>Login</h2>
-  <form method="post">
+  <a href="/register" id="signupcenter"> No account? Sign up!</a>
+  <form method="post" class="rlcenter">
+  </br>
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Login</button>
-  </form>
+    <button type="submit" id="pls">Login</button>
+  </form></div>
+
+</div>
 {% endblock %}
