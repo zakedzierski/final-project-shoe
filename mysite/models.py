@@ -1,6 +1,6 @@
 from django.db import models
 
-class MyShoes(models.Model):
+class Shoes(models.Model):
     name = models.CharField(max_length=30)
     brand_choices = (
         (ADDIDAS, 'Addidas'),
