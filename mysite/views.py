@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+
 def signup(request):
     if request.method == 'POST':
         uf = UserForm(request.POST, prefix='user')
