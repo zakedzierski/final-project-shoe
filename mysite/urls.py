@@ -23,7 +23,11 @@ url('^profile/', CreateView.as_view(
 url('^home/', CreateView.as_view(
                         template_name='home.html',
                         form_class=UserCreationForm,)),
+
 url('^closet/', views.get_closet, name='closet'),
 url('^shoe/new/$', views.create_shoe, name='addshoe'),
+
+url(r'^shoe/([0-9]+)/$', views.select_shoe, name='selectshoe'),
+url(r'^shoe/([0-9]+)/edit/', views.add_miles, name='addmiles'),
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

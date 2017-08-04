@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 id="createtitle">Viewing Shoe {{ shoe.name }} </h1>
+
+
+{% if shoe.icon == "Running Shoe" %}
+  <img id="createtitle1" src="http://i.imgur.com/QouK0pV.png" height=300px></img>
+  {% elif shoe.icon == "Running Spike" %}
+  <img  id="createtitle1" src="http://i.imgur.com/PjSHRcI.png" height=300px></img>
+  {% else %}
+  <img id="createtitle1" src="http://i.imgur.com/1CJwo2p.png" height=300px></img>
+  {% endif %}
+
+<div id="mileage_bar">  {{ shoe.miles_run }}  / {% if shoe.icon == "Running Shoe" %}500
+  {% elif shoe.icon == "Running Spike" %}100
+  {% else %}200{% endif %}</div>
+
+  {% if shoe.icon == "Running Shoe" %}<progress class="progressbar" max="500" value="{{ shoe.miles_run }}"></progress>
+    {% elif shoe.icon == "Running Spike" %}<progress class="progressbar" max="100" value="{{ shoe.miles_run }}"></progress>
+    {% else %}<progress class="progressbar" max="200" value="{{ shoe.miles_run }}"></progress>{% endif %}
+<a href="edit"><img id="milebutton" src="http://i.imgur.com/h6X6NTf.png" height=20px></img>  <div id="miles">add miles</div></a>
+
+
+{% endblock %}
