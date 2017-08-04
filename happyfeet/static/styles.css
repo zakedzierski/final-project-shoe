@@ -221,3 +221,12 @@ top: 8px;
   color: black;
 
 }
+
+#button1 {
+  float: right;
+  font-size: 40px;
+}
+
+#zoe {
+    font-family: 'Abril Fatface', cursive;
+}
