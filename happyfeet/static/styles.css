@@ -135,11 +135,6 @@ position: relative;
   left:100px;
 }
 
-.center{
-  position: relative;
-  left: 35%;
-}
-
 .rlcenter{
   position: relative;
 padding-left: 25%;
@@ -222,11 +217,40 @@ top: 8px;
 
 }
 
+.center {
+  position: relative;
+  left: 35%;
+}
+
+.center2
+{
+  position: absolute;
+  top: 200px;
+  left: 35%;
+}
+
 #button1 {
   float: right;
   font-size: 40px;
+  position: relative;
+    top: 200px;
+}
+
+#wearehappy
+{
+  position: absolute;
+  left: 35%;
+  top: 55%;
 }
 
 #zoe {
-    font-family: 'Abril Fatface', cursive;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.center1{
+  position: absolute;
+  left: 30%;
 }
