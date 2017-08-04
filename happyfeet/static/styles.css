@@ -1,3 +1,35 @@
+#addashoe
+{
+  position: relative;
+  left: 47%;
+}
+
+.post-form
+{
+  position: relative;
+  left: 25%;
+  top: 13%
+}
+
+.savebtnbtn-default
+{  position: relative;
+  left: 20%;
+}
+
+
+#createtitle
+{  position: relative;
+  left: 35%;}
+
+#createashoe
+{
+  position: relative;
+  left: 32%;
+  height: 225px;
+  width: 500px;
+  background-color: #FFFFFF;
+}
+
 #shoe_boxes
 {
   position: relative;
@@ -188,4 +220,13 @@ top: 8px;
   top:40px;
   color: black;
 
+}
+
+#button1 {
+  float: right;
+  font-size: 40px;
+}
+
+#zoe {
+    font-family: 'Abril Fatface', cursive;
 }
