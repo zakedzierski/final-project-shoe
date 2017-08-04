@@ -236,8 +236,7 @@ top: 8px;
     top: 200px;
 }
 
-#wearehappy
-{
+#wearehappy{
   position: absolute;
   left: 35%;
   top: 55%;
@@ -253,4 +252,57 @@ top: 8px;
 .center1{
   position: absolute;
   left: 30%;
+}
+
+#creator{
+  position: relative;
+    top: 400px;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+#zoecolor{
+  position: relative;
+    top: 200px;
+  color: white;
+}
+
+.zoeprofile{
+  position: relative;
+    top: 200px;
+  background-color: #000099;
+  height: 130px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+}
+
+#lauracolor{
+  position: relative;
+    top: 110px;
+  color: white;
+}
+
+.lauraprofile{
+  position: relative;
+    top: 110px;
+  background-color: #000099;
+  height: 130px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+}
+
+#imancolor{
+  position: relative;
+    top: 260px;
+  color: white;
+}
+
+.imanprofile{
+  position: relative;
+    top: 260px;
+  background-color: #000099;
+  height: 130px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
 }
