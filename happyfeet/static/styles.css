@@ -1,3 +1,89 @@
+#addashoe
+{
+  position: relative;
+  left: 47%;
+}
+
+.post-form
+{
+  position: relative;
+  left: 25%;
+  top: 13%
+}
+
+.savebtnbtn-default
+{  position: relative;
+  left: 20%;
+}
+
+
+#createtitle
+{  position: relative;
+  left: 35%;}
+
+#createashoe
+{
+  position: relative;
+  left: 32%;
+  height: 225px;
+  width: 500px;
+  background-color: #FFFFFF;
+}
+
+#shoe_boxes
+{
+  position: relative;
+  left: 32%;
+  height: 150px;
+  top:9px;
+  width: 600px;
+  background-color: #FFFFFF;
+}
+
+#myclosettitle
+{
+  position: relative;
+  left: 34%;
+  top:10px;
+}
+#addbutton {
+  position: absolute;
+  left: 0%;
+
+}
+#addmiles {
+    position: absolute;
+    left: 20%;
+    font-size:80%;
+    top: 100%;
+}
+
+#selectbutton {
+  position: absolute;
+  left: 80%;
+
+}
+#select {
+    position: absolute;
+    left: 100%;
+    font-size:80%;
+    top: 100%;
+}
+
+#table {
+  position: absolute;
+  left: 40%;
+  bottom:20%;
+  font-size:120%;
+}
+
+.shoeicons
+{
+position: relative;
+left:5%;
+top:40px;
+}
+
 .icon {
   height:50px;
   width:50px;
@@ -134,4 +220,13 @@ top: 8px;
   top:40px;
   color: black;
 
+}
+
+#button1 {
+  float: right;
+  font-size: 40px;
+}
+
+#zoe {
+    font-family: 'Abril Fatface', cursive;
 }

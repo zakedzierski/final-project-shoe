@@ -1,5 +1,7 @@
 from django.shortcuts import render
+from django.template import RequestContext
 
+from contact.forms import
 
 def signup(request):
     if request.method == 'POST':
@@ -17,4 +19,3 @@ def signup(request):
     return django.shortcuts.render_to_response('login/signup.html',
                                                dict(userform=uf,
                                                     userprofileform=upf),
-                                               context_instance=django.template.RequestContext(request))
