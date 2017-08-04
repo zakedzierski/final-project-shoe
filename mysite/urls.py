@@ -17,6 +17,11 @@ url('^register/', CreateView.as_view(
             template_name='register.html',
             form_class=UserCreationForm,
             success_url='/profile')),
+
+url('^addmiles/', CreateView.as_view(
+            template_name='addmiles.html',
+            form_class=UserCreationForm,)),            
+
 url('^profile/', CreateView.as_view(
                     template_name='profile.html',
                     form_class=UserCreationForm,)),
@@ -25,5 +30,7 @@ url('^home/', CreateView.as_view(
                         form_class=UserCreationForm,)),
 url('^closet/', views.get_closet, name='closet'),
 url('^shoe/new/$', views.create_shoe, name='addshoe'),
+
+
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
