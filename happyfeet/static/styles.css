@@ -276,32 +276,32 @@ top: 8px;
 
 .center {
   position: relative;
-  left: 35%;
+  margin-left: 35%;
 }
 
 .center2
 {
   position: absolute;
   top: 200px;
-  left: 35%;
+  margin-left: 35%;
 }
 
 #button1 {
   float: right;
   font-size: 80px;
   position: relative;
-    top: 200px;
+    top: 300px;
 }
 
 #wearehappy{
   position: absolute;
-  left: 35%;
-  top: 55%;
+  top: 40%;
   text-align: center;
+  margin-left: 35%;
 }
 
 #zoe {
-  font-family: 'Crimson+Text', cursive;
+  font-family: 'Arial', cursive;
   text-align: center;
   font-weight: bold;
   font-size: 35px;
@@ -309,13 +309,13 @@ top: 8px;
 
 .center1{
   position: absolute;
-  left: 30%;
+  margin-left: 35%;
 }
 
 #creator{
   position: relative;
     top: 400px;
-  font-family: 'Crimson+Text', cursive;
+  font-family: 'Arial', cursive;
   font-weight: bold;
   font-size: 35px;
 }
@@ -331,7 +331,7 @@ top: 8px;
     top: 200px;
   background-color: #000099;
   height: 130px;
-  font-family: 'Crimson+Text', cursive;
+  font-family: 'Arial', cursive;
   font-size: 23px;
 }
 
@@ -346,7 +346,7 @@ top: 8px;
     top: 130px;
   background-color: #000099;
   height: 130px;
-  font-family: 'Crimson+Text', cursive;
+  font-family: 'Arial', cursive;
   font-size: 23px;
 }
 
@@ -361,7 +361,7 @@ top: 8px;
     top: 280px;
   background-color: #000099;
   height: 130px;
-  font-family: 'Crimson+Text', cursive;
+  font-family: 'Arial', cursive;
   font-size: 23px;
 }
 
@@ -374,4 +374,9 @@ top: 8px;
 #happyfeet{
   text-align: center;
   margin-left: 33%;
+}
+
+.info{
+  font-family: 'Arial';
+  font-size: 23px;
 }
