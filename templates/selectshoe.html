@@ -17,12 +17,16 @@
   {% elif shoe.icon == "Running Spike" %}100
   {% else %}200{% endif %}</div>
 
-  {% if shoe.icon == "Running Shoe" %}<progress class="progressbar" max="500" value="{{ shoe.miles_run }}"></progress>
-    {% elif shoe.icon == "Running Spike" %}<progress class="progressbar" max="100" value="{{ shoe.miles_run }}"></progress>
-    {% else %}<progress class="progressbar" max="200" value="{{ shoe.miles_run }}"></progress>{% endif %}
+  {% if shoe.icon == "Running Shoe" %}<progress class="progressbar" max="500" value="{{ shoe.miles_run }}"></progress>{% if shoe.miles_run == 500 %}<div id="error"><img src="http://www.iconsdb.com/icons/preview/gray/exclamation-xxl.png" height=20></img> <b>YOU NEED TO GET NEW SHOES!</b></div>{% endif %}
+
+
+
+    {% elif shoe.icon == "Running Spike" %}<progress class="progressbar" max="100" value="{{ shoe.miles_run }}"></progress>{% if shoe.miles_run == 100 %}<div id="error"><img src="http://www.iconsdb.com/icons/preview/gray/exclamation-xxl.png" height=20></img> <b>YOU NEED TO GET NEW SHOES!</b></div>{% endif %}
+    {% else %}<progress class="progressbar" max="200" value="{{ shoe.miles_run }}"></progress>{% if shoe.miles_run == 200 %}<div id="error"><img src="http://www.iconsdb.com/icons/preview/gray/exclamation-xxl.png" height=20></img> <b>YOU NEED TO GET NEW SHOES!</b></div>{% endif %}{% endif %}
+
 <a href="edit"><img id="milebutton" src="http://i.imgur.com/h6X6NTf.png" height=20px></img>  <div id="miles">add miles</div></a>
 
 
-{% if shoe.miles_run == 500 %}<div id="error"><img src="http://www.iconsdb.com/icons/preview/gray/exclamation-xxl.png" height=20></img> YOU NEED TO GET NEW SHOES!</div>{% endif %}
+
 
 {% endblock %}
