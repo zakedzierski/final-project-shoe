@@ -291,13 +291,14 @@ top: 8px;
   position: absolute;
   left: 35%;
   top: 55%;
+  text-align: center;
 }
 
 #zoe {
   font-family: 'Yantramanav', cursive;
   text-align: center;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .center1{
@@ -310,7 +311,7 @@ top: 8px;
     top: 400px;
   font-family: 'Yantramanav', cursive;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 35px;
 }
 
 #zoecolor{
@@ -325,12 +326,12 @@ top: 8px;
   background-color: #000099;
   height: 130px;
   font-family: 'Yantramanav', cursive;
-  font-size: 20px;
+  font-size: 23px;
 }
 
 #lauracolor{
   position: relative;
-    top: 130px;
+    top: 110px;
   color: white;
 }
 
@@ -340,12 +341,12 @@ top: 8px;
   background-color: #000099;
   height: 130px;
   font-family: 'Yantramanav', cursive;
-  font-size: 20px;
+  font-size: 23px;
 }
 
 #imancolor{
   position: relative;
-    top: 280px;
+    top: 260px;
   color: white;
 }
 
@@ -355,5 +356,16 @@ top: 8px;
   background-color: #000099;
   height: 130px;
   font-family: 'Yantramanav', cursive;
-  font-size: 20px;
+  font-size: 23px;
+}
+
+#asic{
+  position: relative;
+  display: block;
+  float: left;
+}
+
+#happyfeet{
+  text-align: center;
+  margin-left: 33%;
 }
