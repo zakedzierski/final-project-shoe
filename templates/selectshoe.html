@@ -23,4 +23,6 @@
 <a href="edit"><img id="milebutton" src="http://i.imgur.com/h6X6NTf.png" height=20px></img>  <div id="miles">add miles</div></a>
 
 
+{% if shoe.miles_run == 500 %}<div id="error"><img src="http://www.iconsdb.com/icons/preview/gray/exclamation-xxl.png" height=20></img> YOU NEED TO GET NEW SHOES!</div>{% endif %}
+
 {% endblock %}

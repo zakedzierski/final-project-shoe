@@ -282,7 +282,7 @@ top: 8px;
 
 #button1 {
   float: right;
-  font-size: 1000px;
+  font-size: 40px;
   position: relative;
     top: 200px;
 }
@@ -294,7 +294,7 @@ top: 8px;
 }
 
 #zoe {
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Yantramanav', cursive;
   text-align: center;
   font-weight: bold;
   font-size: 40px;
@@ -308,7 +308,7 @@ top: 8px;
 #creator{
   position: relative;
     top: 400px;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Yantramanav', cursive;
   font-weight: bold;
   font-size: 40px;
 }
@@ -324,7 +324,7 @@ top: 8px;
     top: 200px;
   background-color: #000099;
   height: 130px;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Yantramanav', cursive;
   font-size: 20px;
 }
 
@@ -339,7 +339,7 @@ top: 8px;
     top: 130px;
   background-color: #000099;
   height: 130px;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Yantramanav', cursive;
   font-size: 20px;
 }
 
@@ -354,6 +354,6 @@ top: 8px;
     top: 280px;
   background-color: #000099;
   height: 130px;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Yantramanav', cursive;
   font-size: 20px;
 }
