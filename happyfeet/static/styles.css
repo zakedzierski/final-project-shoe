@@ -325,35 +325,35 @@ top: 8px;
   background-color: #000099;
   height: 130px;
   font-family: 'Amatic SC', cursive;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 #lauracolor{
   position: relative;
-    top: 110px;
+    top: 130px;
   color: white;
 }
 
 .lauraprofile{
   position: relative;
-    top: 110px;
+    top: 130px;
   background-color: #000099;
   height: 130px;
   font-family: 'Amatic SC', cursive;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 #imancolor{
   position: relative;
-    top: 260px;
+    top: 280px;
   color: white;
 }
 
 .imanprofile{
   position: relative;
-    top: 260px;
+    top: 280px;
   background-color: #000099;
   height: 130px;
   font-family: 'Amatic SC', cursive;
-  font-size: 30px;
+  font-size: 20px;
 }
