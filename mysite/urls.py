@@ -22,6 +22,7 @@ url('^profile/', CreateView.as_view(
                     form_class=UserCreationForm,)),
 
 url('^closet/', views.get_closet, name='closet'),
+url('^home/', views.open_home, name='home'),
 url('^$', views.open_home, name='home'),
 url('^shoe/new/$', views.create_shoe, name='addshoe'),
 
