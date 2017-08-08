@@ -382,6 +382,9 @@ top: 8px;
 .info{
   font-family: 'Arial';
   font-size: 30px;
+  display: block;
+  float: left;
+  margin-top: 15px;
 }
 
 #brands{
@@ -401,4 +404,13 @@ top: 8px;
 .why{
   font-family: 'Arial';
   font-size: 50px;
+  padding-top: 10px;
+}
+
+.notwhy {
+  margin-top: 70px;
+  font-family: 'Arial';
+  font-size: 50px;
+  display: block;
+  float: left;
 }
