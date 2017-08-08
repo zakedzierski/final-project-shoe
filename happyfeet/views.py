@@ -3,6 +3,12 @@ from .models import MyShoe
 from .forms import ShoeForm, AddMilesForm
 
 # Create your views here.
+
+def open_home(request):
+    return render(request, 'home.html',
+    {'shoes': MyShoe.objects.filter(user=request.user)
+    })
+
 def get_closet(request):
     return render(request, 'closet.html',
     {'shoes': MyShoe.objects.filter(user=request.user)
