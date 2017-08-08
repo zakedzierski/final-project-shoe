@@ -20,11 +20,9 @@ url('^register/', CreateView.as_view(
 url('^profile/', CreateView.as_view(
                     template_name='profile.html',
                     form_class=UserCreationForm,)),
-url('^home/', CreateView.as_view(
-                        template_name='home.html',
-                        form_class=UserCreationForm,)),
 
 url('^closet/', views.get_closet, name='closet'),
+url('^$', views.open_home, name='home'),
 url('^shoe/new/$', views.create_shoe, name='addshoe'),
 
 url(r'^shoe/([0-9]+)/$', views.select_shoe, name='selectshoe'),
